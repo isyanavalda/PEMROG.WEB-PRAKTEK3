@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> latihan1 </title>
+    </head>
+    <body>
+    <!-- menggunakan javascript -->
+    <script language="javaScript">
+        //var adalah variabel
+        //prompt menampilkan pop up texbox
+        var nilai = prompt("Nilai (0-100) : ", 0);
+        var hasil = "";
+        //if else 2 kondisi 2 kemungkinan
+        if (nilai <= 40)
+            hasil = "E";
+        else if (nilai <= 55)
+            hasil = "D";
+        else if (nilai <= 60)
+            hasil = "C";
+        else if (nilai <= 65)
+            hasil = "BC";
+        else if (nilai <= 70)
+            hasil = "B";
+        else if (nilai <= 80)
+            hasil = "AB";
+        else if (nilai <= 100)
+            hasil = "A";
+        else
+            hasil = "NILAI TIDAK SESUAI";
+        document.write("Hasil : " + hasil);
+        //document write menampilkan data langsung di web
+    </script>
+    </body>
+</html>
